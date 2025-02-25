@@ -51,10 +51,10 @@ def get_jokes_url():
 
 
 while True:
-    cat_image_urls = get_cat_image_urls(api_cats_token, cats_count_from, cats_count_to)
+    cat_image_urls = get_cat_image_urls(api_cats_token, CATS_COUNT_FROM, CATS_COUNT_TO)
     
     joke = get_jokes_url()
 
 
-    send_media_group(tg_chat_id, tg_token, cat_image_urls, joke)
-    sleep(delay)
+    send_media_group(TG_CHAT_ID, tg_token, cat_image_urls, joke)
+    sleep(DELAY)

@@ -1,4 +1,4 @@
-delay = 20
-cats_count_from = 2
-cats_count_to = 5
-tg_chat_id = '@super_funny_cats'
+DELAY = 20
+CATS_COUNT_FROM = 2
+CATS_COUNT_TO = 5
+TG_CHAT_ID = '@super_funny_cats'
