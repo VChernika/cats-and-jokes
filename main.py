@@ -3,6 +3,7 @@ from pprint import pprint
 import requests
 from time import sleep
 from config import *
+from settings import *
 
 
 
@@ -50,11 +51,10 @@ def get_jokes_url():
 
 
 while True:
-    cat_image_urls = get_cat_image_urls(api_cats_token, 2, 5)
+    cat_image_urls = get_cat_image_urls(api_cats_token, cats_count_from, cats_count_to)
     
     joke = get_jokes_url()
 
-    tg_chat_id = '@super_funny_cats'
 
     send_media_group(tg_chat_id, tg_token, cat_image_urls, joke)
-    sleep(20)
+    sleep(delay)
